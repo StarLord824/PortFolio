@@ -1,0 +1,199 @@
+/* styles.css */
+
+body {
+    font-family: "Aclonica", sans-serif;
+    margin: 0;
+    padding: 0;
+background-image: linear-gradient(to right, hsla(22, 100%, 50%, 0.97) 0%, #f9c023 100%);
+    background-size: cover;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+  width: 100%;
+}
+h1{
+    margin-top:20px;
+    margin-bottom: 10px;
+    
+    font-weight: 400;
+    font-style: normal;
+    animation: beat 1.5s infinite;
+    
+}
+#connects{
+    position: fixed;
+    width: 50%;
+    border:3px solid white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  left: 48%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 11px;
+}
+#icons{
+    cursor: pointer;
+}
+
+#main-header {
+    z-index: 1;
+    margin: 0;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    transition: all 0.3s;
+    flex: 0 0 auto;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1.02);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+#main-header p{
+    letter-spacing: 2px;
+    line-height: 1.6rem;
+    animation: beat 1.5s infinite;
+}
+.header{
+    padding-left: 1%;
+    padding-right: 8%;
+}
+
+#profile-photo {
+    margin-top: 2rem;
+    flex: 1;
+    width: 225px; 
+    height: auto;
+    animation: beat 2s infinite;
+}
+
+#about {
+    margin: 20px;
+    transition: all 0.3s;
+    width: 80%;
+    max-width: 1200px;
+    flex: 1;
+    overflow-y: auto;
+}
+.page-section.active {
+    bottom: 0;
+}
+
+.container {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    height: 85%;
+    background-color: lightgray;
+    transition: top 0.5s ease;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    animation: beat 3s infinite;
+    cursor: pointer;
+}
+.h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 35px;
+    width: 27% ;
+    background-color: rgba(0,0,0,0.4);
+    border: 1.5px solid #fff;
+    border-radius: 4px 4px 20px 20px ;
+    letter-spacing: 5px;
+}
+.page-section{
+    
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 15px solid black;
+}
+#skills {
+background-image: linear-gradient(90deg, #c08bff 20%, #2BD2FF   50%,#c08bff );
+    overflow: auto;
+    border: 1px solid #ccc; 
+    position: absolute;
+    top: 79%;
+    left: 0;
+    right: 0;
+    height: 88%;
+    transition: top 0.5s ease;
+    z-index: 2;
+}
+#projects {
+    background-color: #2AF598;
+background-image: linear-gradient(90deg, #2AF598 0%, #49c8f6 43%, #49c8f6 57%, #2af598 100%);
+
+    overflow: auto;
+    border: 1px solid #ccc; 
+    position: absolute;
+    top: 86%;
+    left: 0;
+    right: 0;
+    height: 88%;
+    transition: top 0.5s ease;
+    font-size: large;
+    z-index: 3;
+}
+#coursework {
+    background-color: #FBDA61;
+background-image: linear-gradient(90deg,#fe6cd2 1%, #FBDA61 50%, #fe6cd2 100%);
+    overflow: auto;
+    border: 1px solid #ccc; 
+    position: absolute;
+    top: 93%;
+    left: 0;
+    right: 0;
+    height: 88%;
+    transition: top 0.5s ease;
+    z-index: 4;
+}
+
+.cardHolder{
+    color: black;
+    margin-bottom: 3rem;
+    display: flex;
+    width: 80vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-around;
+}
+.cards{
+    background: rgb(207, 207, 207);
+    border: 3px solid black;
+    border-radius: 6px;
+    height: 60px;
+    width: 12vw;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    
+}
